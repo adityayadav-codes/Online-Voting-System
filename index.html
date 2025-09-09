@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Voting System</title>
+  <link rel="stylesheet" href="style.css"> <!-- ✅ Linked external CSS -->
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <nav>
+      <div class="logo">OVS</div>
+      <button class="hamburger" aria-label="Menu" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="aboutUs.html">About</a>
+        <a href="services.html">Service</a>
+        <a href="contactUs.html">Contact</a>
+      </div>
+      <div class="actions">
+        <!-- <button class="btn vote-button">Vote</button> -->
+        <a href="voteform.html" button class="btn vote-button">Vote</button></a>
+        <a href="Login.html" class="login-link">Login</a>
+        <button class="btn glow-button">Register</button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main Section -->
+  <main>
+    <img src="https://dymk4s89vutua.cloudfront.net/wp-content/uploads/2024/07/online_voting.webp?x81393" 
+         alt="Online Voting Illustration">
+    <p>Welcome to Online Voting System</p>
+  </main>
+
+  <!-- About Section -->
+  <section class="about-section">
+    <h1>About Our System</h1>
+    <p>
+      Our Online Voting System ensures transparency, security, and accessibility for all users. 
+      Designed with a user-friendly interface, it makes the voting process simple and reliable.
+    </p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <iframe src="footer.html" title="Footer Section"></iframe>
+    <p>© 2025 Online Voting System. All rights reserved.</p>
+  </footer>
+
+  <!-- Script -->
+  <script>
+    function toggleMenu() {
+      document.querySelector(".nav-links").classList.toggle("active");
+      document.querySelector(".actions").classList.toggle("active");
+    }
+  </script>
+</body>
+</html>

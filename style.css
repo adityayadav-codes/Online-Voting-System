@@ -1,0 +1,258 @@
+/* ==============================
+   RESET & GLOBAL STYLES
+============================== */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* ==============================
+   HEADER & NAVIGATION
+============================== */
+header {
+  background: #189AB4;
+  padding: 10px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-size: 1.75rem; /* ~28px */
+  font-weight: bold;
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+/* Navigation Links */
+.nav-links {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #0f1111;
+  font-size: 1.125rem;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #e6e0d7;
+}
+
+/* ==============================
+   ACTION BUTTONS
+============================== */
+.actions {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.actions a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.actions a:hover {
+  color: #222;
+}
+
+/* Shared button styles */
+.btn {
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+/* Vote button */
+.vote-button {
+  background: #f57702;
+  color: #fff;
+}
+.vote-button:hover {
+  background: #e53935;
+  color: #111;
+  box-shadow: 0 0 15px #00ffcc;
+}
+
+/* Register button */
+.glow-button {
+  background: #111;
+  color: #fff;
+  border-radius: 30px;
+}
+.glow-button:hover {
+  background: #00ffcc;
+  color: #111;
+  box-shadow: 0 0 15px #00ffcc, 0 0 30px #00ffcc;
+}
+
+/* ==============================
+   HAMBURGER MENU
+============================== */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 4px;
+  background: none;
+  border: none;
+}
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background: #fff;
+  border-radius: 2px;
+}
+
+/* ==============================
+   MAIN SECTION
+============================== */
+main {
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+  background: url("https://dymk4s89vutua.cloudfront.net/wp-content/uploads/2024/07/online_voting.webp?x81393")
+    no-repeat center/cover;
+  color: #fff;
+}
+
+main img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 1.5rem;
+}
+
+main p {
+  font-size: 1.8rem;
+  font-weight: bold;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 10px 20px;
+  border-radius: 8px;
+}
+
+/* ==============================
+   ABOUT SECTION
+============================== */
+.about-section {
+  background-color: #fff;
+  padding: 60px 30px;
+  text-align: center;
+  max-width: 900px;
+  margin: 50px auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.about-section h1 {
+  font-size: 2.25rem;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+.about-section p {
+  font-size: 1.125rem;
+  color: #555;
+  line-height: 1.8;
+}
+
+/* ==============================
+   FOOTER
+============================== */
+footer {
+  background: #111;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+}
+
+footer iframe {
+  width: 100%;
+  max-width: 1200px;
+  height: 250px;
+  border: none;
+  margin-bottom: 10px;
+}
+
+/* ==============================
+   RESPONSIVE DESIGN
+============================== */
+@media (max-width: 768px) {
+  .nav-links,
+  .actions {
+    display: none;
+    flex-direction: column;
+    background: #222;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .nav-links.active,
+  .actions.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  main p {
+    font-size: 1.2rem;
+  }
+
+  footer iframe {
+    height: 150px;
+  }
+}
+
+@media (max-width: 480px) {
+  .btn {
+    padding: 8px 15px;
+    font-size: 0.875rem;
+  }
+
+  .nav-links a {
+    font-size: 0.875rem;
+  }
+
+  main p {
+    font-size: 1rem;
+  }
+}
