@@ -23,3 +23,59 @@ document.getElementById('registrationForm').addEventListener('submit', function(
     alert('⚠️Please fill in all required fields correctly.');
   }
 });
+// themes
+// theme.js
+const THEME_KEY = 'site-theme';
+const html = document.documentElement;
+const select = document.getElementById('themeSelect');
+const cycleBtn = document.getElementById('cycleBtn');
+
+// Available order for cycle
+const THEMES = ['system','light','dark','blue'];
+
+// Initialize from localStorage
+function applyTheme(theme){
+  if(!theme || theme === 'system'){
+    // Remove explicit data-theme so system preference applies
+    html.setAttribute('data-theme', 'system');
+  } else {
+    html.setAttribute('data-theme', theme);
+  }
+  // update select UI
+  if(select.value !== theme) select.value = theme || 'system';
+}
+
+function saveTheme(theme){
+  localStorage.setItem(THEME_KEY, theme || 'system');
+}
+
+// Load saved or default
+const saved = localStorage.getItem(THEME_KEY) || 'system';
+applyTheme(saved);
+
+// UI: select change
+select.addEventListener('change', (e) => {
+  const t = e.target.value;
+  applyTheme(t);
+  saveTheme(t);
+});
+
+// Cycle button
+cycleBtn.addEventListener('click', () => {
+  const current = select.value || 'system';
+  const idx = THEMES.indexOf(current);
+  const next = THEMES[(idx + 1) % THEMES.length];
+  applyTheme(next);
+  saveTheme(next);
+});
+
+// Keyboard shortcut: press "T" to cycle (ignore inputs)
+document.addEventListener('theme-controls', (e) => {
+  if(e.key.toLowerCase() === 't'){
+    const active = document.activeElement;
+    const tag = active && active.tagName;
+    if(tag !== 'INPUT' && tag !== 'TEXTAREA' && active.getAttribute('role') !== 'textbox'){
+      cycleBtn.click();
+    }
+  }
+});
