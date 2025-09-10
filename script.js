@@ -14,3 +14,12 @@
       }
     });
   }
+  // registration
+  // Simple front-end validation & feedback
+document.getElementById('registrationForm').addEventListener('submit', function(e) {
+  const form = e.target;
+  if (!form.checkValidity()) {
+    e.preventDefault();
+    alert('⚠️Please fill in all required fields correctly.');
+  }
+});
