@@ -1,19 +1,63 @@
-  const voteBtn = document.querySelector(".btn.vote-button");
-  const messageDiv = document.getElementById("message");
+// ---------------- REGISTRATION FORM VALIDATION ----------------
+const regForm = document.getElementById("registrationForm");
+if (regForm) {
+  regForm.addEventListener("submit", function (e) {
+    if (!this.checkValidity()) {
+      e.preventDefault();
+      alert("⚠️ Please fill in all required fields correctly.");
+    }
+  });
+}
+//=====theme=====//
 
-  if (voteBtn && messageDiv) {
-    voteBtn.addEventListener("click", () => {
-      const candidate = document.querySelector('input[name="candidate"]:checked');
-
-      if (candidate) {
-        messageDiv.textContent = `✅ You voted for ${candidate.value}. Thank you!`;
-        messageDiv.style.color = "green";
-      } else {
-        messageDiv.textContent = "⚠️ Please select a candidate before voting.";
-        messageDiv.style.color = "red";
-      }
-    });
+// Apply a theme
+function applyTheme(theme) {
+  if (!theme || theme === "system") {
+    html.setAttribute("data-theme", "system");
+  } else {
+    html.setAttribute("data-theme", theme);
   }
+  if (select && select.value !== theme) select.value = theme || "system";
+}
+
+// Save theme
+function saveTheme(theme) {
+  localStorage.setItem(THEME_KEY, theme || "system");
+}
+
+// Load saved theme
+applyTheme(localStorage.getItem(THEME_KEY) || "system");
+
+// Theme select change
+if (select) {
+  select.addEventListener("change", (e) => {
+    const t = e.target.value;
+    applyTheme(t);
+    saveTheme(t);
+  });
+}
+
+// Cycle button
+if (cycleBtn) {
+  cycleBtn.addEventListener("click", () => {
+    const current = select ? select.value : "system";
+    const idx = THEMES.indexOf(current);
+    const next = THEMES[(idx + 1) % THEMES.length];
+    applyTheme(next);
+    saveTheme(next);
+  });
+}
+
+// Optional: keyboard shortcut (T) to cycle
+document.addEventListener("keydown", (e) => {
+  if (e.key.toLowerCase() === "t") {
+    const active = document.activeElement;
+    const tag = active && active.tagName;
+    if (tag !== "INPUT" && tag !== "TEXTAREA") {
+      cycleBtn?.click();
+    }
+  }
+});
   // registration
   // Simple front-end validation & feedback
 document.getElementById('registrationForm').addEventListener('submit', function(e) {
@@ -79,3 +123,11 @@ document.addEventListener('theme-controls', (e) => {
     }
   }
 });
+//====for loader screen=======
+
+// it will be represent the hide notent at 2sec.
+setTimeout(() => {
+  document.getElementById('splash').style.display= 'none';
+
+  document.getElementById('content').style.display= 'block';
+}, 1000);
