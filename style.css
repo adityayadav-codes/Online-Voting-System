@@ -139,6 +139,7 @@ nav {
    MAIN SECTION
 ============================== */
 main {
+  background-color: #000;
   min-height: 70vh;
   display: flex;
   flex-direction: column;
@@ -146,9 +147,10 @@ main {
   align-items: center;
   text-align: center;
   padding: 2rem;
-  background: url("https://dymk4s89vutua.cloudfront.net/wp-content/uploads/2024/07/online_voting.webp?x81393")
-    no-repeat center/cover;
-  color: #fff;
+  /* background: url("https://dymk4s89vutua.cloudfront.net/wp-content/uploads/2024/07/online_voting.webp?x81393")
+    no-repeat center/cover; */
+    background:#0f2027,#203a43,#2c5364; 
+  color: #0f2027,#203a43,#2c5364;
 }
 
 main img {
