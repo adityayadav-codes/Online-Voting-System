@@ -37,4 +37,47 @@ The project focuses on **security**, **efficiency**, and **ease of use**, making
 ## 🚀 How to Run the Project
 1. Download or clone this repository:
    ```bash
-   git clone https://github.com/your-username/online-voting-system.git
+   https://adityayadav-codes.github.io/Online-Voting-System/
+   2.	Install and start XAMPP or any PHP server.
+	3.	Move the project folder to the htdocs directory (for XAMPP users).
+	4.	Import the database.sql file into phpMyAdmin to set up the database.
+	5.	Start Apache and MySQL from the XAMPP control panel.
+	6.	Open your browser and go to:🖼️ Screenshots
+
+Add screenshots of your main pages here for better presentation:
+
+	•	Home Page
+	•	Login / Registration
+	•	Voting Panel
+	•	Admin Dashboard
+	•	Result Page
+
+⸻
+
+🏷️ Badges
+👨‍💻 Team Members
+
+Meet the passionate team behind the Online Voting System 🗳️ — each member played a vital role in designing, developing, and perfecting this project.
+
+💻 Aditya Yadav — Lead Developer & UI Designer
+🧩 Akash Yadav — Frontend Developer & Integrator
+🗄️ Anil Singh — Database Administrator & Security Manager
+🧠 Abhishek Kumar Yadav — Backend Developer (PHP & Logic Handling)
+⭐ Together, we built a secure, transparent, and efficient online voting platform with a shared vision for digital democracy.
+
+⸻
+
+🏫 Project Credits
+
+🎓 Institution: Hi-Tech Institue of Engeneering & Technology
+👨‍🏫 Guided By: Our Skills
+📅 Academic Year: 2025
+
+⸻
+
+📬 Contact
+
+For any queries or collaboration opportunities, feel free to reach out.
+📧 adityayadav2905@gmail.com
+
+⸻
