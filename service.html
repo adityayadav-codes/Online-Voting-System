@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Services - Online Voting System</title>
+  <link rel="icon" type="image/png" href="images/logo.png" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <style>
+    :root {
+      --primary: #0078d7;
+      --gradient: linear-gradient(to right, #154651, #74e5fe, #154651);
+      --light-bg: #f9f9f9;
+      --card-bg: #e9f1fc;
+      --text-dark: #222;
+      --text-light: #fff;
+      --transition: all 0.4s ease;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Poppins', Arial, sans-serif;
+      background-color: var(--light-bg);
+      color: var(--text-dark);
+      line-height: 1.6;
+    }
+
+    /* ===== Header ===== */
+    header {
+      background: var(--gradient);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      padding: 2rem 1rem;
+      color: var(--text-light);
+      flex-wrap: wrap;
+      text-align: center;
+    }
+
+    .header-img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      border: 3px solid #fff;
+      object-fit: cover;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+    }
+
+    header h1 {
+      font-size: 1.8rem;
+      font-weight: 600;
+      max-width: 500px;
+    }
+
+    /* ===== Section ===== */
+    section {
+      max-width: 1100px;
+      margin: 2rem auto;
+      padding: 2rem;
+      background-color: #ffffffd8;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      transition: var(--transition);
+    }
+
+    section:hover {
+      transform: translateY(-3px);
+    }
+
+    section h2 {
+      text-align: center;
+      margin-bottom: 1rem;
+      color: var(--primary);
+      font-size: 1.8rem;
+    }
+
+    section p {
+      text-align: center;
+      color: #555;
+      margin-bottom: 2rem;
+      font-size: 1rem;
+    }
+
+    /* ===== Services Grid ===== */
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .service-box {
+      background-color: var(--card-bg);
+      border-radius: 10px;
+      padding: 2rem 1.5rem;
+      text-align: center;
+      transition: var(--transition);
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+    }
+
+    .service-box:hover {
+      background: var(--gradient);
+      color: var(--text-light);
+      transform: translateY(-5px) scale(1.05);
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .service-icon {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .service-box h3 {
+      margin-bottom: 0.8rem;
+      font-size: 1.3rem;
+    }
+
+    .service-box p {
+      color: inherit;
+      font-size: 0.95rem;
+    }
+
+    /* ===== CTA Section ===== */
+    .cta {
+      text-align: center;
+      background: var(--gradient);
+      color: var(--text-light);
+      padding: 2rem;
+      border-radius: 10px;
+      margin-top: 2rem;
+    }
+
+    .cta h3 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .cta a {
+      background-color: #fff;
+      color: #154651;
+      padding: 10px 20px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 600;
+      display: inline-block;
+      transition: var(--transition);
+    }
+
+    .cta a:hover {
+      background-color: #154651;
+      color: #fff;
+      transform: scale(1.05);
+    }
+
+    /* ===== Footer ===== */
+    footer {
+      background: var(--gradient);
+      color: var(--text-light);
+      text-align: center;
+      padding: 2rem 1rem;
+      margin-top: 3rem;
+    }
+
+    footer p {
+      margin-bottom: 0.5rem;
+    }
+
+    footer .button {
+      background-color: #fff;
+      color: #154651;
+      padding: 10px 20px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 600;
+      display: inline-block;
+      transition: var(--transition);
+    }
+
+    footer .button:hover {
+      background-color: #154651;
+      color: #fff;
+      transform: scale(1.05);
+    }
+
+    /* ===== Responsive ===== */
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+      }
+
+      header h1 {
+        font-size: 1.5rem;
+      }
+
+      section {
+        padding: 1.5rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <img class="header-img" src="https://cdn-icons-png.flaticon.com/512/747/747376.png" alt="Logo" />
+    <h1>Our Services</h1>
+  </header>
+
+  <section data-aos="fade-up">
+    <h2>What We Offer</h2>
+    <p>Our online voting platform provides secure, efficient, and scalable solutions for elections, organizations, and communities.</p>
+
+    <div class="services">
+      <div class="service-box" data-aos="fade-right">
+        <div class="service-icon">🗳️</div>
+        <h3>Online Voting Platform</h3>
+        <p>Enable secure and transparent elections for schools, colleges, companies, or government institutions.</p>
+      </div>
+
+      <div class="service-box" data-aos="fade-up">
+        <div class="service-icon">🔐</div>
+        <h3>Voter Authentication</h3>
+        <p>Advanced authentication ensures only registered users can cast their vote using encrypted credentials.</p>
+      </div>
+
+      <div class="service-box" data-aos="fade-left">
+        <div class="service-icon">⚙️</div>
+        <h3>Admin Dashboard</h3>
+        <p>Comprehensive admin panel to manage candidates, track results, and monitor voter activity in real-time.</p>
+      </div>
+
+      <div class="service-box" data-aos="fade-right">
+        <div class="service-icon">📈</div>
+        <h3>Real-time Result Tracking</h3>
+        <p>Our system displays results dynamically with live updates, ensuring full transparency during the process.</p>
+      </div>
+
+      <div class="service-box" data-aos="fade-up">
+        <div class="service-icon">💡</div>
+        <h3>Customization & Integration</h3>
+        <p>Tailor the voting system to your organization’s needs with seamless integration into existing platforms.</p>
+      </div>
+
+      <div class="service-box" data-aos="fade-left">
+        <div class="service-icon">🛡️</div>
+        <h3>Data Security</h3>
+        <p>End-to-end encryption protects all voter data and results, ensuring a tamper-proof voting experience.</p>
+      </div>
+    </div>
+
+    <div class="cta" data-aos="fade-up">
+      <h3>Want to implement a secure voting system for your organization?</h3>
+      <a href="contact.html">Contact Us</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Online Voting System. All rights reserved.</p>
+    <a href="index.html" class="button">Back to Home</a>
+  </footer>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 800, once: true });
+  </script>
+</body>
+</html>
