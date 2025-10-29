@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us - Online Voting System</title>
+  <link rel="icon" type="image/png" href="images/logo.png" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <style>
+    :root {
+      --primary: #0078d7;
+      --gradient: linear-gradient(to right, #154651, #74e5fe, #154651);
+      --light-bg: #f9f9f9;
+      --card-bg: #e9f1fc;
+      --text-dark: #222;
+      --text-light: #fff;
+      --transition: all 0.4s ease;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Poppins', Arial, sans-serif;
+      background-color: var(--light-bg);
+      color: var(--text-dark);
+      line-height: 1.6;
+    }
+
+    /* ===== Header ===== */
+    header {
+      background: var(--gradient);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      padding: 2rem 1rem;
+      color: var(--text-light);
+      flex-wrap: wrap;
+      text-align: center;
+    }
+
+    .header-img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      border: 3px solid #fff;
+      object-fit: cover;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+    }
+
+    header h1 {
+      font-size: 1.8rem;
+      font-weight: 600;
+      max-width: 500px;
+    }
+
+    /* ===== Contact Section ===== */
+    section {
+      max-width: 1100px;
+      margin: 2rem auto;
+      padding: 2rem;
+      background-color: #ffffffd8;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      transition: var(--transition);
+    }
+
+    section:hover {
+      transform: translateY(-3px);
+    }
+
+    section h2 {
+      text-align: center;
+      margin-bottom: 1rem;
+      color: var(--primary);
+      font-size: 1.8rem;
+    }
+
+    p {
+      text-align: center;
+      color: #555;
+      margin-bottom: 2rem;
+      font-size: 1rem;
+    }
+
+    /* ===== Form ===== */
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    input,
+    textarea {
+      padding: 0.9rem 1rem;
+      border: 1.5px solid #ccc;
+      border-radius: 8px;
+      font-size: 1rem;
+      outline: none;
+      transition: var(--transition);
+      background-color: #f9fcff;
+    }
+
+    input:focus,
+    textarea:focus {
+      border-color: var(--primary);
+      box-shadow: 0 0 8px rgba(0, 120, 215, 0.2);
+    }
+
+    textarea {
+      resize: none;
+      height: 120px;
+    }
+
+    button {
+      background: var(--gradient);
+      color: #fff;
+      padding: 0.9rem 1.5rem;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: var(--transition);
+    }
+
+    button:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    /* ===== Contact Info Section ===== */
+    .contact-info {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+      text-align: center;
+    }
+
+    .info-box {
+      background-color: var(--card-bg);
+      border-radius: 10px;
+      padding: 1.5rem;
+      transition: var(--transition);
+    }
+
+    .info-box:hover {
+      background: var(--gradient);
+      color: var(--text-light);
+      transform: scale(1.05);
+    }
+
+    .info-box h3 {
+      margin-bottom: 0.5rem;
+    }
+
+    .info-box p {
+      color: inherit;
+      margin: 0;
+    }
+
+    /* ===== Footer ===== */
+    footer {
+      background: var(--gradient);
+      color: var(--text-light);
+      text-align: center;
+      padding: 2rem 1rem;
+      margin-top: 3rem;
+    }
+
+    footer p {
+      margin-bottom: 0.5rem;
+    }
+
+    footer .button {
+      background-color: #fff;
+      color: #154651;
+      padding: 10px 20px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 600;
+      display: inline-block;
+      transition: var(--transition);
+    }
+
+    footer .button:hover {
+      background-color: #154651;
+      color: #fff;
+      transform: scale(1.05);
+    }
+
+    /* ===== Responsive ===== */
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+      }
+
+      header h1 {
+        font-size: 1.5rem;
+      }
+
+      section {
+        padding: 1.5rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <img class="header-img" src="https://cdn-icons-png.flaticon.com/512/747/747376.png" alt="Logo" />
+    <h1>Contact Us</h1>
+  </header>
+
+  <section data-aos="fade-up">
+    <h2>Get In Touch</h2>
+    <p>We’d love to hear from you! Whether you have a question about our system, feedback, or partnership ideas — feel free to reach out.</p>
+
+    <form action="#" method="POST" data-aos="fade-up">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <input type="text" name="subject" placeholder="Subject" />
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+
+    <div class="contact-info" data-aos="fade-up">
+      <div class="info-box">
+        <h3>📍 Address</h3>
+        <p>Ghaziabad, India</p>
+      </div>
+      <div class="info-box">
+        <h3>📞 Phone</h3>
+        <p>+91 7270078812</p><p>+91 8009997485</p>
+      </div>
+      <div class="info-box">
+        <h3>📧 Email</h3>
+        <p>adityayadav2905@gmail.com</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Online Voting System. All rights reserved.</p>
+    <a href="index.html" class="button">Back to Home</a>
+  </footer>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 800, once: true });
+  </script>
+</body>
+</html>
