@@ -1,38 +1,280 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>aboutus</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us - Online Voting System</title>
+  <link rel="icon" type="image/png" href="images/logo.png" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <style>
+    :root {
+      --primary: #0078d7;
+      --gradient: linear-gradient(to right, #154651, #74e5fe, #154651);
+      --light-bg: #f9f9f9;
+      --card-bg: #e9f1fc;
+      --text-dark: #222;
+      --text-light: #fff;
+      --transition: all 0.4s ease;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Poppins', Arial, sans-serif;
+      background-color: var(--light-bg);
+      color: var(--text-dark);
+      line-height: 1.6;
+    }
+
+    /* ===== Header ===== */
+    header {
+      background: var(--gradient);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      padding: 2rem 1rem;
+      color: var(--text-light);
+      flex-wrap: wrap;
+      text-align: center;
+    }
+
+    .header-img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      border: 3px solid #fff;
+      object-fit: cover;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+    }
+
+    header h1 {
+      font-size: 1.8rem;
+      font-weight: 600;
+      max-width: 500px;
+    }
+
+    /* ===== Sections ===== */
+    section {
+      max-width: 1100px;
+      margin: 2rem auto;
+      padding: 2rem;
+      background-color: #ffffffd8;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      transition: var(--transition);
+    }
+
+    section:hover {
+      transform: translateY(-3px);
+    }
+
+    section h2 {
+      text-align: center;
+      margin-bottom: 1rem;
+      color: var(--primary);
+      font-size: 1.6rem;
+    }
+
+    /* ===== Image + Text Layouts ===== */
+    .image-right,
+    .image-left {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+
+    .image-right img,
+    .image-left img {
+      width: 100%;
+      max-width: 320px;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .image-right div,
+    .image-left div {
+      flex: 1;
+      min-width: 280px;
+    }
+
+    p {
+      font-size: 1rem;
+      color: #444;
+    }
+
+    .read {
+      text-decoration: none;
+      color: var(--primary);
+      font-weight: 500;
+      transition: var(--transition);
+    }
+
+    .read:hover {
+      color: #000;
+      text-decoration: underline;
+    }
+
+    /* ===== Features / Steps / Why Choose ===== */
+    .features,
+    .steps,
+    .why-choose {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1.2rem;
+      margin-top: 1.5rem;
+    }
+
+    .feature-box,
+    .step-box,
+    .why-box {
+      background-color: var(--card-bg);
+      padding: 1.2rem;
+      border-radius: 8px;
+      text-align: center;
+      transition: var(--transition);
+      font-weight: 500;
+    }
+
+    .feature-box:hover,
+    .step-box:hover,
+    .why-box:hover {
+      background: var(--gradient);
+      color: var(--text-light);
+      transform: scale(1.05);
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    /* ===== Footer ===== */
+    footer {
+      background: var(--gradient);
+      color: var(--text-light);
+      text-align: center;
+      padding: 2rem 1rem;
+      margin-top: 3rem;
+    }
+
+    footer .button {
+      background-color: #fff;
+      color: #154651;
+      padding: 10px 20px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 600;
+      display: inline-block;
+      margin-top: 10px;
+      transition: var(--transition);
+    }
+
+    footer .button:hover {
+      background-color: #154651;
+      color: #fff;
+      transform: scale(1.05);
+    }
+
+    /* ===== Responsive ===== */
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+      }
+
+      header h1 {
+        font-size: 1.5rem;
+      }
+
+      section {
+        padding: 1.5rem;
+      }
+
+      .image-right,
+      .image-left {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .image-right img,
+      .image-left img {
+        margin-top: 1rem;
+      }
+    }
+  </style>
 </head>
+
 <body>
-      <h1>About Online Voting System</h1>
-    <p>Empowering people to make their voices heard through secure and reliable digital voting.</p>
+  <header>
+    <img class="header-img" src="https://cdn-icons-png.flaticon.com/512/747/747376.png" alt="Logo" />
+    <h1>About Our Online Voting System</h1>
+  </header>
+
+  <section class="image-right" data-aos="fade-right">
+    <div>
+      <h2><u>Introduction</u></h2>
+      <p>
+        Our Online Voting System is designed to make elections transparent, secure, and accessible to everyone. It helps users cast their votes safely and conveniently from anywhere using secure authentication methods.
+      </p>
+      <a class="read" href="content.html">Read more</a>
+    </div>
+    <img src="https://cdn-icons-png.flaticon.com/512/616/616494.png" alt="Voting Illustration" />
   </section>
 
-  <!-- About Section -->
-  <section class="about container">
-    <h2>Who We Are</h2>
-    <p>
-      Online Voting System (OVS) is a modern platform that enables transparent, secure, and efficient elections.
-      Our mission is to ensure that every individual can participate in decision-making processes with ease and confidence.
-    </p>
-
-    <div class="about-grid">
-      <div class="card">
-        <h3>🔒 Secure</h3>
-        <p>We use the latest encryption and security practices to protect every vote.</p>
-      </div>
-      <div class="card">
-        <h3>⚡ Fast</h3>
-        <p>Instant vote counting and results without delays or manual errors.</p>
-      </div>
-      <div class="card">
-        <h3>🌍 Accessible</h3>
-        <p>Vote from anywhere in the world with just an internet connection.</p>
-      </div>
+  <section class="image-left" data-aos="fade-left">
+    <img src="https://cdn-icons-png.flaticon.com/512/906/906175.png" alt="Mission Image" />
+    <div>
+      <h2><u>Our Mission</u></h2>
+      <p>
+        We aim to revolutionize the traditional voting process by providing a digital, fast, and tamper-proof solution for modern-day elections, ensuring trust and accessibility for every voter.
+      </p>
+      <a class="read" href="content.html">Read more</a>
     </div>
   </section>
 
+  <section data-aos="fade-up">
+    <h2>Features of the System</h2>
+    <div class="features">
+      <div class="feature-box">🔐 Secure Login</div>
+      <div class="feature-box">✅ Voter Verification</div>
+      <div class="feature-box">📊 Real-time Results</div>
+      <div class="feature-box">🛠️ Admin Panel</div>
+      <div class="feature-box">🔒 Encrypted Voting</div>
+    </div>
+  </section>
+
+  <section data-aos="fade-up">
+    <h2>How It Works</h2>
+    <div class="steps">
+      <div class="step-box">📝 Step 1: Register</div>
+      <div class="step-box">🧾 Step 2: Verify Identity</div>
+      <div class="step-box">🗳️ Step 3: Cast Vote</div>
+      <div class="step-box">📈 Step 4: View Results</div>
+    </div>
+  </section>
+
+  <section data-aos="fade-up">
+    <h2>Why Choose Us?</h2>
+    <div class="why-choose">
+      <div class="why-box">✅ Tamper-proof</div>
+      <div class="why-box">💡 Easy to Use</div>
+      <div class="why-box">🔍 Transparent</div>
+      <div class="why-box">⏱️ Saves Time & Cost</div>
+    </div>
+  </section>
+
+  <footer>
+    <p>Want to know more? Contact us today.</p>
+    <a href="#contact" class="button">Contact Us</a>
+  </footer>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 800, once: true });
+  </script>
 </body>
 </html>
