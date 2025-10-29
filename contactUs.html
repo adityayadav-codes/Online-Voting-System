@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
   <style>
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
     :root {
       --primary: #0078d7;
       --gradient: linear-gradient(to right, #154651, #74e5fe, #154651);
@@ -225,7 +226,10 @@
     <h2>Get In Touch</h2>
     <p>We’d love to hear from you! Whether you have a question about our system, feedback, or partnership ideas — feel free to reach out.</p>
 
-    <form action="#" method="POST" data-aos="fade-up">
+    <form action="https://api.web3forms.com/submit" method="POST" data-aos="fade-up" id ="contactForm"class="form" novalidate>
+    
+      <input type="hidden" name="access_key" value="588881ba-f25b-401b-a57f-261175ae619c"/>
+      
       <input type="text" name="name" placeholder="Your Name" required />
       <input type="email" name="email" placeholder="Your Email" required />
       <input type="text" name="subject" placeholder="Subject" />
