@@ -59,10 +59,10 @@ Add screenshots of your main pages here for better presentation:
 
 Meet the passionate team behind the Online Voting System 🗳️ — each member played a vital role in designing, developing, and perfecting this project.
 
-💻 Aditya Yadav — Lead Developer & UI Designer
-🧩 Akash Yadav — Frontend Developer & Integrator
-🗄️ Anil Singh — Database Administrator & Security Manager
-🧠 Abhishek Kumar Yadav — Backend Developer (PHP & Logic Handling)
+# 💻 Aditya Yadav — Lead Developer & UI Designer
+# 🧩 Akash Yadav — Frontend Developer & Integrator
+# 🗄️ Anil Singh — Database Administrator & Security Manager
+# 🧠 Abhishek Kumar Yadav — Backend Developer (PHP & Logic Handling)
 ⭐ Together, we built a secure, transparent, and efficient online voting platform with a shared vision for digital democracy.
 
 ⸻
