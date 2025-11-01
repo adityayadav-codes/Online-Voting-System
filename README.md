@@ -9,7 +9,7 @@ The project focuses on **security**, **efficiency**, and **ease of use**, making
 
 ## ⚙️ Technologies Used
 - **Frontend:** HTML, CSS, JavaScript  
-- **Backend:** PHP  
+- **Backend:** Python 
 - **Database:** MySQL  
 - **Animations:** AOS (Animate On Scroll) Library  
 
@@ -69,9 +69,9 @@ Meet the passionate team behind the Online Voting System 🗳️ — each member
 
 🏫 Project Credits
 
-🎓 Institution: Hi-Tech Institue of Engeneering & Technology
+🎓 Institution: Hi-Tech Institue of Engeneering & Technology, Ghaziabad
 👨‍🏫 Guided By: Our Skills
-📅 Academic Year: 2025
+📅 Academic Year: 2023-2026
 
 ⸻
 
@@ -79,5 +79,6 @@ Meet the passionate team behind the Online Voting System 🗳️ — each member
 
 For any queries or collaboration opportunities, feel free to reach out.
 📧 adityayadav2905@gmail.com
+
 
 ⸻
