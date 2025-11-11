@@ -1,0 +1,200 @@
+<style>
+  .readmore-section {
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    padding: 50px 40px;
+    margin-top: 40px;
+    font-family: "Poppins", sans-serif;
+    line-height: 1.8;
+    animation: fadeIn 1s ease;
+  }
+
+  .readmore-section h3 {
+    color: #1a73e8;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    border-left: 5px solid #1a73e8;
+    padding-left: 10px;
+  }
+
+  .readmore-section p {
+    color: #444;
+    font-size: 1.05rem;
+    margin: 15px 0;
+  }
+
+  .readmore-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+  }
+
+  .readmore-card {
+    background: #f9fbff;
+    border-radius: 15px;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .readmore-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 30px rgba(26, 115, 232, 0.15);
+  }
+
+  .readmore-card img {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 15px;
+  }
+
+  .readmore-card h4 {
+    color: #1a73e8;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+
+  .readmore-card p {
+    color: #555;
+    font-size: 0.95rem;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .highlight-box {
+    background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+    border-left: 5px solid #1a73e8;
+    padding: 20px;
+    border-radius: 12px;
+    margin-top: 25px;
+  }
+
+  .highlight-box strong {
+    color: #1a73e8;
+  }
+
+  .readmore-footer {
+    text-align: center;
+    margin-top: 40px;
+    color: #333;
+  }
+
+  .readmore-footer img {
+    width: 120px;
+    margin-bottom: 10px;
+  }
+
+  .readmore-footer h4 {
+    color: #1a73e8;
+    font-size: 1.3rem;
+    margin-bottom: 5px;
+  }
+
+  .readmore-footer p {
+    color: #555;
+    font-size: 0.95rem;
+  }
+  .readmore-footer2 {
+    /* background: #6f7989; */
+    border-radius: 12px;
+    /* padding: 20px; */
+    /* margin-top: 30px; */
+    background: var(--gradient);
+      color: var(--text-light);
+      text-align: center;
+      padding: 2rem 1rem;
+      margin-top: 3rem;
+  }
+  .readmore-footer2 .button {
+      background-color: #fff;
+      color: #154651;
+      padding: 10px 20px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 600;
+      display: inline-block;
+      transition: var(--transition);
+    }
+
+    .readmore-footer2 .button:hover {
+      background-color: #154651;
+      color: #fff;
+      transform: scale(1.05);
+    }
+    
+</style>
+
+<div class="readmore-section">
+  <h3>About the Smart Voting System</h3>
+  <p>
+    The <strong>Smart Voting System</strong> revolutionizes the election process by offering a secure, transparent, and user-friendly platform that allows voters to participate in elections from anywhere. 
+    It ensures fair, tamper-proof, and efficient voting through advanced technology.
+  </p>
+
+  <div class="readmore-grid">
+    <div class="readmore-card">
+      <img src="https://cdn-icons-png.flaticon.com/512/942/942748.png" alt="Security Icon" />
+      <h4>Advanced Security</h4>
+      <p>
+        The system uses encryption, OTP authentication, and blockchain storage to prevent tampering and ensure every vote is recorded securely.
+      </p>
+    </div>
+
+    <div class="readmore-card">
+      <img src="https://cdn-icons-png.flaticon.com/512/747/747310.png" alt="Accessibility Icon" />
+      <h4>Universal Accessibility</h4>
+      <p>
+        Citizens can vote from home, workplace, or abroad using a web or mobile interface designed for maximum convenience and inclusivity.
+      </p>
+    </div>
+
+    <div class="readmore-card">
+      <img src="https://cdn-icons-png.flaticon.com/512/3135/3135789.png" alt="Transparency Icon" />
+      <h4>Transparency & Trust</h4>
+      <p>
+        Real-time result tracking and audit logs make the entire process transparent, reducing human error and enhancing trust in the election.
+      </p>
+    </div>
+  </div>
+
+  <div class="highlight-box">
+    <p>
+      <strong>Why It Matters:</strong> In today’s fast-paced digital world, people demand secure and efficient systems that simplify civic engagement. 
+      The Smart Voting System encourages higher participation, particularly among students, employees, and citizens living abroad.
+    </p>
+  </div>
+
+  <h3>Core Features</h3>
+  <ul>
+    <li>🔒 Solid Authentication</li>
+    <li>📊 Real-Time Vote Counting and Result Display</li>
+    <li>🌐 Accessible Anytime, Anywhere</li>
+    <li>📱 User-Friendly Mobile Interface</li>
+    <li>🧾 Blockchain-based Tamper-Proof Records</li>
+    <li>👥 Role-based Access for Admin and Voters</li>
+  </ul>
+
+  <p>
+    With these features, the Smart Voting System bridges the gap between security and convenience — enabling every eligible voter to make their choice confidently without worrying about data breaches or manipulation.
+  </p>
+<footer>
+  <div class="readmore-footer">
+    <img src="https://cdn-icons-png.flaticon.com/512/3106/3106921.png" alt="Voting Icon" />
+    <h4>Empowering Democracy Digitally</h4>
+    <p>
+      The future of elections lies in technology that makes every vote count — safely, quickly, and fairly.
+    </p>
+  </div>
+</div>
+
+    <div style="text-align: center; margin-top: 30px;" class="readmore-footer2">
+    <p>Want to know more? Contact us today.</p>
+    <a href="contactUs.html" class="button">Contact Us</a>
+    </div>
+  </footer>
