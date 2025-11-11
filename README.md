@@ -1,7 +1,7 @@
-# 🗳️ Online Voting System
+# 🗳️ Smart Voting System
 
 ## 📖 Overview
-The **Online Voting System** is a secure, transparent, and user-friendly web-based application that enables voters to cast their votes electronically from anywhere. This system aims to eliminate manual voting challenges by providing a digital platform that ensures integrity, accessibility, and real-time result computation. It enhances election transparency, prevents fraud, and simplifies the entire voting process through an intuitive interface.
+The **Smart Voting System** is a secure, transparent, and user-friendly web-based application that enables voters to cast their votes electronically from anywhere. This system aims to eliminate manual voting challenges by providing a digital platform that ensures integrity, accessibility, and real-time result computation. It enhances election transparency, prevents fraud, and simplifies the entire voting process through an intuitive interface.
 
 The project focuses on **security**, **efficiency**, and **ease of use**, making it suitable for institutions, colleges, and small-scale elections. It ensures each registered voter can vote only once, and results are automatically calculated without human intervention.
 
@@ -37,7 +37,7 @@ The project focuses on **security**, **efficiency**, and **ease of use**, making
 ## 🚀 How to Run the Project
 1. Download or clone this repository:
    ```bash
-   https://adityayadav-codes.github.io/Online-Voting-System/
+   https://adityayadav-codes.github.io/Smart-Voting-System/
    2.	Install and start XAMPP or any PHP server.
 	3.	Move the project folder to the htdocs directory (for XAMPP users).
 	4.	Import the database.sql file into phpMyAdmin to set up the database.
@@ -57,13 +57,13 @@ Add screenshots of your main pages here for better presentation:
 🏷️ Badges
 👨‍💻 Team Members
 
-Meet the passionate team behind the Online Voting System 🗳️ — each member played a vital role in designing, developing, and perfecting this project.
+Meet the passionate team behind the Smart Voting System 🗳️ — each member played a vital role in designing, developing, and perfecting this project.
 
 <h5> 💻 Aditya Yadav — Lead Developer & UI Designer</h5>
 <h5>🧩 Akash Yadav — Frontend Developer & Integrator</h5>
 <h5> 🗄️ Anil Singh — Content Creater</h5>
 <h5>🧠 Abhishek Kumar Yadav — Backend Developer (Python & Logic Handling)<h5>
-⭐ Together, we built a secure, transparent, and efficient online voting platform with a shared vision for digital democracy.
+⭐ Together, we built a secure, transparent, and efficient Smart voting platform with a shared vision for digital democracy.
 
 ⸻
 
